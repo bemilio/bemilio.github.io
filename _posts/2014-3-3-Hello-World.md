@@ -1,10 +1,10 @@
 ---
 layout: post
-title: You're up and running!
+title: Loose gears, burning ICs, short circuits - a tech blog not for the faints of heart
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+So, what will you find in this blog? 
+I will write of my electronics and software projects, share some interesting maths and physics that I come across in my studies and hobbies, and in general I will share information that will probably be useful to DIY hobbists like me.
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
-
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+Who am I?
+I am a graduated Electrical Engineering student at an Italian university, now studying Robotics at ETH Zurich. I like to play around with electronics, experiment with simple robots and in general apply what I study. 
