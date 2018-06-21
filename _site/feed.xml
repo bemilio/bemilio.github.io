@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gearloose Projects</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+    <description>Loose gears, burning ICs, short circuits - A tech and science blog not for the faints of heart!
 </description>
     <link>http://gearloose-pojects.science/</link>
     <atom:link href="http://gearloose-pojects.science/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 21 Jun 2018 17:56:31 +0200</pubDate>
-    <lastBuildDate>Thu, 21 Jun 2018 17:56:31 +0200</lastBuildDate>
+    <pubDate>Thu, 21 Jun 2018 18:06:34 +0200</pubDate>
+    <lastBuildDate>Thu, 21 Jun 2018 18:06:34 +0200</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
