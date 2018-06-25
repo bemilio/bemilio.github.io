@@ -4,4 +4,6 @@ title: About
 permalink: /about/
 ---
 
-My projects website, bitches!
+My projects website, *bitches*!
+
+
