@@ -16,4 +16,4 @@ I am a graduated Electrical Engineering student at an Italian university, now st
 
 Then subscribe to my [feed](feed.xml) to get updates!
 
-![alt text](images/psy_edit.jpg "Different tastes")
+![PSY tastes]({{ site.url }}/assets/image.png "Different tastes")
