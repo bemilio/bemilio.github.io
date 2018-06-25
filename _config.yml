@@ -10,7 +10,7 @@ title: Gearloose Projects
 description: > # this means to ignore newlines until "baseurl:"
   Loose gears, burning ICs, short circuits - A tech and science blog not for the faints of heart!
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://github.com/bemilio/bemilio.github.io/tree/master/" # the base hostname & protocol for your site
+url: "https://github.com/bemilio/bemilio.github.io/tree/master" # the base hostname & protocol for your site
 github_username:  bemilio
 
 # Build settings
