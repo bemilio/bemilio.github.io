@@ -14,6 +14,6 @@ I am a graduated Electrical Engineering student at an Italian university, now st
 
 #Are you excited and you want to check out my work?
 
-Then subscribe to my [feed](feed.xml) to get updates!
+Then subscribe to my [feed]({{ site.url }}/feed.xml) to get updates!
 
 ![PSY tastes]({{ site.url }}/assets/image.png "Different tastes")
