@@ -25,7 +25,7 @@ So, the only easy to access and well documented stuff are the libfreenect driver
 
 If you just needed a package for using the Kinect, now you have the link you needed. If for any reason you prefer using other libraries, such as libfreenect, or you just want to hear some beginner's stories, just keep reading ;)
 
-#Let's go for it!
+# Let's go for it!
 
 You can find the code I make reference of  [here](https://github.com/bemilio/kinect_publisher) as a catkin package.
 You will also need to download the previously mentioned lifreenect catkin package in the catkin workspace. To start developing my code, I downloaded [this](https://openkinect.org/wiki/C%2B%2BOpenCvExample) example. If you check my code, you will find *a lot* of similarities. In this example, I found some functions for interfacing the libfreenect libraries with opencv. I started from there, cleaned the code up, removed all the unnecessary stuff and added two ROS publishers (one for the RGB images and one for the Depth images). It is great to have the data as opencv objects, since that allows you to make all the magic of computer vision you want. These publishers use cvbridge to transform the opencv's Mat objects to a ROS message. The result can be found in the class defined [here](https://github.com/bemilio/kinect_publisher/blob/master/src/KinectDevice.cpp). And well, the usage of this class is very easy and you can read it in the [node](https://github.com/bemilio/kinect_publisher/blob/master/src/kinect_publisher_node.cpp) code:
@@ -62,7 +62,7 @@ and the result should be this:
 
 ![Rviz visualization]({{ site.url }}/assets/images/kinect_driver_screenshot.png "Rviz visualization")
 
-#Beware of the CMake
+# Beware of the CMake
 
 The hardest part of this project was to make CMake link the libfreenect libraries correctly, so it is maybe nice to give some help to others who might face the same issues. I am really bad at writing and reading CMakeList files and this is why I am secretly in love with whoever developed the [catkin_simple](https://github.com/catkin/catkin_simple) package. catkin_simple magically lets you solve the dependencies from other catkin packages without editing the CMakeLists file. All you have to do is add a line like:
 ```
@@ -71,10 +71,10 @@ The hardest part of this project was to make CMake link the libfreenect librarie
 at your *package.xml* file and it will do its magic. Unfortunately, this magic was not strong enough for libfreenect.
 By looking online, I eventually found [this](https://github.com/introlab/rtabmap/blob/master/cmake_modules/FindFreenect.cmake) CMake file. "FindFreenect" sounded like a promising name, and my CMake ignorance still allowed me to understand that this file, well, looks for Freenect libraries in different places. So I copy-pasted that code in my CMakeLists file, just before the linking part, and **IT WORKED!**
 
-#Conclusions
+# Conclusions
 
 So, in this post I put some links to various resources that might help you find stuff related to how to use the Kinect under ROS more easily. My suggestion is to use the OpenNI package (I would have done the same if I found it earlier). Still, if you want something simple and easily editable, or if you prefer *libfreenect* over *OpenNI*, I hope you will find my package useful. I don't think I will develop it any further, though.
 
-#What's next?
+# What's next?
 
 I am going to share how the experiments with the SLAM go! Also, I plan to write an introduction to what SLAM is *"for dummies"*. The final plan is to run it on some sort of autonomous quadcopter or wheeled drone, so **keep on reading!**
