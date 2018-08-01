@@ -19,3 +19,5 @@ highlighter: rouge
 
 #theme: jekyll-theme-hacker
 remote_theme: pages-themes/hacker
+
+theme: jekyll-theme-hacker
