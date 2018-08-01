@@ -17,4 +17,5 @@ github_username:  bemilio
 markdown: kramdown
 highlighter: rouge
 
-theme: jekyll-theme-hacker
+#theme: jekyll-theme-hacker
+remote_theme: pages-themes/hacker
