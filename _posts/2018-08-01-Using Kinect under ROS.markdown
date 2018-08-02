@@ -17,13 +17,20 @@ This is a story on how I made the Kinect work under ROS, so I suppose you have s
 # Overview of the problem
 
 My objective is to create a node that gets the RGB and depth images of the kinect and publish them over a ROS topic. Very straightforward. 
-There are apparently already some catkin packages doing it, such as [kinect_node](http://wiki.ros.org/kinect_node). They all looked pretty old and deprecated, and I did not find anything that was supported by ROS 16.04. Except for [OpenNI_camera](https://github.com/ros-drivers/openni_camera), which looks just perfect but, when I found out about it, it was already too late: I had developed my own code, which I will present here. Too bad, at least I practiced some programming in the meantime. And this brings us to the main issue:
+However, the main issue that I discovered when first approaching the world of Kindle drivers for Linux was:
 
-**There is a lot of interesting stuff online. The problem is finding it. **
+**There is a lot of interesting stuff online. The problem is finding it.**
 
-So, the only easy to access and well documented stuff are the libfreenect drivers, which are quite basic, but also interesting for the development on many languages. In particular, there is a C++ wrapper and a catkin package version of the libraries, which is all I needed for what I wanted to do. Let's put them into a ROS node!
+I am saying this because I spent a lot of time researching whether there are already some catkin packages doing what I want to do, and the information I found was *very* confusing. There are a lot of old, broken packages, outdated stuff, and no simple reference to follow.
 
-If you just needed a package for using the Kinect, now you have the OpenNI link you needed. If for any reason you prefer using other libraries, such as libfreenect, or you just want to hear some beginner's stories, just keep on reading ;)
+The only easy to access and well documented stuff are the libfreenect drivers, which are quite basic (no body shape nor gesture recognition), but also interesting for the development on many languages. In particular, there is a C++ wrapper and a catkin package version of the libraries, which is all I needed for what I wanted to do. 
+
+After some more research, I found out that there are apparently already some other catkin packages doing it, such as [kinect_node](http://wiki.ros.org/kinect_node), which looks very old and deprecated, and I did not find anything that was supported by ROS 16.04. 
+Another interesting package is [OpenNI_camera](https://github.com/ros-drivers/openni_camera), wihch launch files are now been substituted by [these](https://github.com/ros-drivers/rgbd_launch). It looks just perfect and uses the OpenNI drivers, which are more advanced and enable to pull richer high-level features from the Kinect. Or at least, that's what I heard, since I was *not* able to make them work under ROS Kinetic with Ubuntu 16.04. It has to be said that I did not really try very hard to make them work, but it looks like [I'm not the only one](https://github.com/ros-drivers/rgbd_launch/issues/36). 
+
+ So, I decided to create my own ROS Node out of the freenect drivers. Little I knew that there was the [freenect_launch package](http://wiki.ros.org/freenect_launch) waiting for me to finish the job to appear. And that does exactly what I needed.
+
+So yeah, as you see, there is a lot of confusion about these drivers. If you just needed a package for using the Kinect, now you have the OpenNI and the frenect_launch links you needed. If for any reason you prefer using other libraries, such as libfreenect, or you just want to hear some beginner's stories, just keep on reading ;)
 
 # Let's go for it!
 
