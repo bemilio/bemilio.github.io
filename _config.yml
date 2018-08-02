@@ -20,3 +20,5 @@ highlighter: rouge
 theme: jekyll-theme-hacker
 remote_theme: pages-themes/hacker
 
+background: images/Noah-Bradley_Izzet-Guildgate.jpg
+
