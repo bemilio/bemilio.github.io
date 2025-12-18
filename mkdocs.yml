@@ -1,0 +1,26 @@
+site_name: Emilio Benenati's personal website
+site_description: 
+site_url: https://bemilio.github.io
+theme:
+    # icon:
+    name: material
+    palette:
+        primary: light blue
+        accent: yellow
+        scheme: slate
+    font:
+        text: Montserrat
+plugins:
+    - blog
+    - include-markdown
+    - search
+    - git-revision-date-localized
+
+nav:
+    - Home: index.md
+    - Blog:
+        - blog/index.md
+    - About: about.md
+
+# extra:
+#   social:
