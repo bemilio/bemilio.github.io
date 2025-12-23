@@ -15,9 +15,12 @@ plugins:
     - include-markdown
     - search
     - git-revision-date-localized
-
+    - social
 markdown_extensions:
   - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 nav:
     - "": index.md
@@ -27,5 +30,11 @@ nav:
     - About: about.md
 
 
-# extra:
-#   social:
+extra:
+  social:
+    - icon: material/email
+      link: mailto:benenati@kth.se
+    - icon: fontawesome/brands/github
+      link: https://www.github.com/bemilio
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/emilio-benenati/
