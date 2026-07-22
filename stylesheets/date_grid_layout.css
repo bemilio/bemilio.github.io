@@ -1,0 +1,22 @@
+.date-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1.5rem;
+}
+
+@media (min-width: 480px) {
+  .date-grid {
+    grid-template-columns: max-content 1fr;
+    column-gap: 1.5rem;
+  }
+}
+
+.date-grid .date-col {
+  font-weight: 600;
+  color: var(--md-default-fg-color--light);
+  white-space: nowrap;
+}
+
+.date-grid .content-col p {
+  margin: 0.2em 0;
+}
