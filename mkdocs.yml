@@ -2,39 +2,44 @@ site_name: Emilio Benenati
 site_description: Personal website
 site_url: https://bemilio.github.io
 theme:
-    # icon:
     name: material
     palette:
-        primary: cyan
-        accent: cyan
+        primary: blue
+        accent: orange
         scheme: slate
     font:
-        text: Montserrat
+        text: Inter
+    features:
+      - header.autohide
+      - navigation.tabs
 plugins:
-    - blog
-    - include-markdown
-    - search
-    - git-revision-date-localized
     - social
 markdown_extensions:
   - attr_list
+  - md_in_html
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-
+extra_javascript:
+  - js/email.js
 nav:
-    - "": index.md
+    - About me: index.md
     - Publications: pub.md
-    - Blog:
-        - blog/index.md
-    - About: about.md
+    - CV: cv.md
+    - News: news.md
+
+extra_css:
+  - stylesheets/smaller_content_width.css
+  - stylesheets/smaller_font.css
+  - stylesheets/no_logo.css
+  - stylesheets/bio_layout.css
 
 
-extra:
-  social:
-    - icon: material/email
-      link: mailto:benenati@kth.se
-    - icon: fontawesome/brands/github
-      link: https://www.github.com/bemilio
-    - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/emilio-benenati/
+# extra:
+#   social:
+#     - icon: material/email
+#       link: mailto:benenati@kth.se
+#     - icon: fontawesome/brands/github
+#       link: https://www.github.com/bemilio
+#     - icon: fontawesome/brands/linkedin
+#       link: https://www.linkedin.com/in/emilio-benenati/
