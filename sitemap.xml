@@ -2,34 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://bemilio.github.io/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-07-22</lastmod>
     </url>
     <url>
-         <loc>https://bemilio.github.io/about/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <loc>https://bemilio.github.io/cv/</loc>
+         <lastmod>2026-07-22</lastmod>
+    </url>
+    <url>
+         <loc>https://bemilio.github.io/news/</loc>
+         <lastmod>2026-07-22</lastmod>
     </url>
     <url>
          <loc>https://bemilio.github.io/pub/</loc>
-         <lastmod>2026-01-14</lastmod>
-    </url>
-    <url>
-         <loc>https://bemilio.github.io/blog/</loc>
-         <lastmod>2026-01-14</lastmod>
-    </url>
-    <url>
-         <loc>https://bemilio.github.io/blog/2025/09/14/blog-post-test/</loc>
-         <lastmod>2026-01-14</lastmod>
-    </url>
-    <url>
-         <loc>https://bemilio.github.io/snippets/news/</loc>
-         <lastmod>2026-01-14</lastmod>
-    </url>
-    <url>
-         <loc>https://bemilio.github.io/blog/archive/2025/</loc>
-         <lastmod>2026-01-14</lastmod>
-    </url>
-    <url>
-         <loc>https://bemilio.github.io/blog/category/stories/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-07-22</lastmod>
     </url>
 </urlset>

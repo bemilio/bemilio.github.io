@@ -1,0 +1,25 @@
+.bio-layout {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.bio-layout .bio-left {
+  flex: 0 0 220px;
+}
+
+.bio-layout .bio-right {
+  flex: 1 1 320px;
+  min-width: 260px;
+}
+
+.bio-layout .bio-left img {
+  width: 150px;
+  max-width: 150px;
+}
+
+.bio-layout .bio-title {
+  font-size: 0.85em;
+  margin: 0.5em 0;
+}
